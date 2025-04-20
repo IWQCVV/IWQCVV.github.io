@@ -17,34 +17,85 @@
             animation: gradientBG 15s ease infinite;
         }
     </style>
+        <script>
+            // 移动菜单切换脚本
+            function toggleMenu() {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.toggle('hidden');
+                const icon = document.querySelector('#menu-button i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-xmark');
+            }
+    
+            // 点击外部区域关闭菜单
+            document.addEventListener('click', function(event) {
+                const menu = document.getElementById('mobile-menu');
+                const button = document.getElementById('menu-button');
+                if (!menu.contains(event.target) && !button.contains(event.target)) {
+                    menu.classList.add('hidden');
+                    document.querySelector('#menu-button i').classList.replace('fa-xmark', 'fa-bars');
+                }
+            });
+        </script>
 </head>
 <body class="bg-gray-900 text-gray-100">
-    <!-- Same navigation as homepage -->
-    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-cyan-500/20 text-white"> <!-- 添加text-white类 -->
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-cyan-500/20">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <a href="#" class="flex items-center space-x-2 text-white">
-                        <div class="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center">
-                            <i class="fas fa-atom text-white text-lg"></i>
-                        </div>
-                        <span class="text-xl font-bold">IWQCCVV 2025</span>
+                <!-- Logo部分保持不变 -->
+                <a href="#" class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-atom text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-bold">IWQCCVV 2025</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a>
+                    <a href="speakers.html" class="hover:text-cyan-400 transition-colors">Speakers</a>
+                    <a href="program.html" class="hover:text-cyan-400 transition-colors">Program</a>
+                    <a href="venue.html" class="hover:text-cyan-400 transition-colors">Venue</a>
+                    <a href="accommodation.html" class="hover:text-cyan-400 transition-colors">Accommodation</a>
+                    <a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a>
+                    <a href="gallery.html" class="hover:text-cyan-400 transition-colors">Gallery</a>
+                    <a href="registration.html" class="bg-cyan-500 hover:bg-cyan-600 px-6 py-2 rounded-full transition-colors">
+                        Register Now
                     </a>
-                    
-                    <div class="hidden md:flex items-center space-x-8">
+                </div>
+                    <!-- 移动端菜单按钮 -->
+                    <button 
+                        id="menu-button"
+                        class="md:hidden p-2 rounded-lg hover:bg-gray-700/50 transition-colors"
+                        onclick="toggleMenu()"
+                        aria-label="Toggle navigation menu"
+                    >
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+                    <div 
+                    id="mobile-menu"
+                    class="hidden md:hidden absolute top-16 left-0 right-0 bg-gray-900/95 backdrop-blur-lg border-b border-cyan-500/20"
+                >
+                <div class="container mx-auto px-4 py-4">
+                    <div class="flex flex-col space-y-4">
                         <a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a>
-                        <a href="speakers.html" class="hover:text-cyan-400 transition-colors">Speakers</a>
-                        <a href="program.html" class="hover:text-cyan-400 transition-colors">Program</a>
-                        <a href="venue.html" class="hover:text-cyan-400 transition-colors">Venue</a>
-                        <a href="accommodation.html" class="hover:text-cyan-400 transition-colors">Accommodation</a>
-                        <a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a>
-                        <a href="gallery.html" class="hover:text-cyan-400 transition-colors">Gallery</a>
-                        <a href="registration.html" class="bg-cyan-500 hover:bg-cyan-600 px-6 py-2 rounded-full transition-colors">
+                        <a href="speakers.html" class="hover:text-cyan-400 py-2">Speakers</a>
+                        <a href="program.html" class="hover:text-cyan-400 py-2">Program</a>
+                        <a href="venue.html" class="hover:text-cyan-400 py-2">Venue</a>
+                        <a href="accommodation.html" class="hover:text-cyan-400 py-2">Accommodation</a>
+                        <a href="contact.html" class="hover:text-cyan-400 py-2">Contact</a>
+                        <a href="gallery.html" class="hover:text-cyan-400 py-2">Gallery</a>
+                        <a href="registration.html" 
+                            class="bg-cyan-500 hover:bg-cyan-600 px-6 py-2 rounded-full text-center transition-colors">
                             Register Now
                         </a>
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
     <!-- Page Header -->
     <header class="pt-32 pb-20 bg-gradient-to-b from-gray-900 to-gray-900/50">
         <div class="container mx-auto px-4 lg:px-8 text-center">
@@ -58,41 +109,92 @@
     </header>
 
     <!-- Schedule Content -->
-    <main class="container mx-auto px-4 lg:px-8 py-16">
-        <div class="max-w-4xl mx-auto">
-            <div class="space-y-6">
-                <!-- Day 1 -->
-                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700/50">
-                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
-                        <i class="fas fa-calendar-day text-cyan-400 mr-3"></i>
-                        Day 1: July 30, 2023
-                    </h3>
-                    <div class="space-y-4">
-                        <div class="bg-gray-700/30 p-4 rounded-lg hover:border-l-4 border-cyan-400 transition-all">
-                            <div class="flex items-start justify-between">
-                                <div>
-                                    <div class="text-cyan-400 text-sm mb-2">09:00 - 09:30</div>
-                                    <h4 class="font-semibold mb-2">Opening Ceremony</h4>
-                                    <p class="text-gray-400 text-sm">Welcome address by conference chairs</p>
-                                </div>
-                                <span class="text-xs bg-cyan-400/10 text-cyan-400 px-3 py-1 rounded-full">Main Hall</span>
-                            </div>
-                        </div>
-                        <!-- Add more schedule items -->
-                    </div>
-                </div>
+<!-- Schedule Content -->
+<main class="container mx-auto px-4 lg:px-8 py-16">
+    <div class="overflow-x-auto rounded-xl border border-gray-700/50">
+        <table class="w-full">
+            <thead class="bg-gray-800/70 backdrop-blur-sm">
+                <tr class="border-b border-gray-700/50">
+                    <th class="p-4 text-left text-cyan-400 font-semibold">Time</th>
+                    <th class="p-4 text-center">Tue 22 Aug</th>
+                    <th class="p-4 text-center">Wed 23 Aug</th>
+                    <th class="p-4 text-center">Thu 24 Aug</th>
+                    <th class="p-4 text-center">Fri 25 Aug</th>
+                </tr>
+            </thead>
+            
+            <!-- Morning Session -->
+            <tbody class="divide-y divide-gray-700/50">
+                <tr class="bg-gray-800/30">
+                    <td colspan="5" class="p-3 text-center text-cyan-400 font-semibold">
+                        <i class="fas fa-sun mr-2"></i>Morning Session
+                    </td>
+                </tr>
+                
+                <!-- Coordinator Row -->
+                <tr class="hover:bg-gray-800/30 transition-colors">
+                    <td class="p-4 font-medium text-cyan-400">Coordinator</td>
+                    <td class="p-4 text-center">Prof. Alice Zhang</td>
+                    <td class="p-4 text-center">Dr. Wei Chen</td>
+                    <td class="p-4 text-center">Prof. Hiroshi Tanaka</td>
+                    <td class="p-4 text-center">Dr. Emma Wilson</td>
+                </tr>
 
-                <!-- Day 2 -->
-                <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700/50 mt-12">
-                    <h3 class="text-2xl font-semibold mb-6 flex items-center">
-                        <i class="fas fa-calendar-day text-cyan-400 mr-3"></i>
-                        Day 2: July 31, 2023
-                    </h3>
-                    <!-- Schedule items -->
-                </div>
-            </div>
-        </div>
-    </main>
+                <!-- Time Slots -->
+                <tr class="hover:bg-gray-800/30 transition-colors">
+                    <td class="p-4 font-medium">08:30 - 09:05</td>
+                    <td class="p-4 text-center">Opening Remarks</td>
+                    <td class="p-4 text-center">Keynote: Quantum Validation</td>
+                    <td class="p-4 text-center">Poster Session</td>
+                    <td class="p-4 text-center">Panel Discussion</td>
+                </tr>
+
+                <tr class="hover:bg-gray-800/30 transition-colors">
+                    <td class="p-4 font-medium">09:05 - 10:15</td>
+                    <td class="p-4 text-center">Theory Workshop</td>
+                    <td class="p-4 text-center">Experimental Methods</td>
+                    <td class="p-4 text-center">Case Studies</td>
+                    <td class="p-4 text-center">Future Directions</td>
+                </tr>
+
+                <!-- Break -->
+                <tr class="bg-cyan-500/10">
+                    <td class="p-4 font-medium">10:15 - 10:30</td>
+                    <td colspan="4" class="p-4 text-center text-cyan-400">
+                        <i class="fas fa-mug-hot mr-2"></i>Coffee Break
+                    </td>
+                </tr>
+            </tbody>
+
+            <!-- Afternoon Session -->
+            <tbody class="divide-y divide-gray-700/50">
+                <tr class="bg-gray-800/30">
+                    <td colspan="5" class="p-3 text-center text-cyan-400 font-semibold">
+                        <i class="fas fa-moon mr-2"></i>Afternoon Session
+                    </td>
+                </tr>
+                
+                <!-- Coordinator Row -->
+                <tr class="hover:bg-gray-800/30 transition-colors">
+                    <td class="p-4 font-medium text-cyan-400">Coordinator</td>
+                    <td class="p-4 text-center">Dr. Michael Brown</td>
+                    <td class="p-4 text-center">Prof. Li Wei</td>
+                    <td class="p-4 text-center">Dr. Sofia Rossi</td>
+                    <td class="p-4 text-center">Prof. John Smith</td>
+                </tr>
+
+                <!-- Time Slots -->
+                <tr class="hover:bg-gray-800/30 transition-colors">
+                    <td class="p-4 font-medium">13:30 - 14:25</td>
+                    <td class="p-4 text-center">Validation Techniques</td>
+                    <td class="p-4 text-center">Hardware Demo</td>
+                    <td class="p-4 text-center">Software Tools</td>
+                    <td class="p-4 text-center">Closing Session</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
 
     <!-- Same footer as homepage -->
     <footer class="bg-gray-900/80 border-t border-gray-800">

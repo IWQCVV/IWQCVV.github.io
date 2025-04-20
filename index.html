@@ -17,12 +17,33 @@
             animation: gradientBG 15s ease infinite;
         }
     </style>
+        <script>
+            // 移动菜单切换脚本
+            function toggleMenu() {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.toggle('hidden');
+                const icon = document.querySelector('#menu-button i');
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-xmark');
+            }
+    
+            // 点击外部区域关闭菜单
+            document.addEventListener('click', function(event) {
+                const menu = document.getElementById('mobile-menu');
+                const button = document.getElementById('menu-button');
+                if (!menu.contains(event.target) && !button.contains(event.target)) {
+                    menu.classList.add('hidden');
+                    document.querySelector('#menu-button i').classList.replace('fa-xmark', 'fa-bars');
+                }
+            });
+        </script>
 </head>
 <body class="bg-gray-900 text-gray-100">
     <!-- Navigation -->
     <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-cyan-500/20">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex items-center justify-between h-16">
+                <!-- Logo部分保持不变 -->
                 <a href="#" class="flex items-center space-x-2">
                     <div class="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center">
                         <i class="fas fa-atom text-white text-lg"></i>
@@ -42,6 +63,36 @@
                         Register Now
                     </a>
                 </div>
+                    <!-- 移动端菜单按钮 -->
+                    <button 
+                        id="menu-button"
+                        class="md:hidden p-2 rounded-lg hover:bg-gray-700/50 transition-colors"
+                        onclick="toggleMenu()"
+                        aria-label="Toggle navigation menu"
+                    >
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+                    <div 
+                    id="mobile-menu"
+                    class="hidden md:hidden absolute top-16 left-0 right-0 bg-gray-900/95 backdrop-blur-lg border-b border-cyan-500/20"
+                >
+                <div class="container mx-auto px-4 py-4">
+                    <div class="flex flex-col space-y-4">
+                        <a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a>
+                        <a href="speakers.html" class="hover:text-cyan-400 py-2">Speakers</a>
+                        <a href="program.html" class="hover:text-cyan-400 py-2">Program</a>
+                        <a href="venue.html" class="hover:text-cyan-400 py-2">Venue</a>
+                        <a href="accommodation.html" class="hover:text-cyan-400 py-2">Accommodation</a>
+                        <a href="contact.html" class="hover:text-cyan-400 py-2">Contact</a>
+                        <a href="gallery.html" class="hover:text-cyan-400 py-2">Gallery</a>
+                        <a href="registration.html" 
+                            class="bg-cyan-500 hover:bg-cyan-600 px-6 py-2 rounded-full text-center transition-colors">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -54,7 +105,7 @@
                 <h1 class="text-5xl md:text-6xl font-bold mt-6 mb-8 leading-tight">
                     International Workshop on<br>
                     <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                      Characterization, Verification, and Validation 
+                        Quantum Characterization, Verification, and Validation 
                     </span>
                 </h1>
                 <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
@@ -72,40 +123,150 @@
         </div>
     </header>
 
-    <!-- Highlights Section -->
-    <section id="highlights" class="py-20 bg-gradient-to-b from-gray-900 to-gray-900/50">
+    <!-- 新增快速链接部分 -->
+    <section class="py-16 bg-gradient-to-b from-gray-900 to-gray-900/50">
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">Conference Highlights</h2>
-                <p class="text-gray-400 max-w-xl mx-auto">Discover the key features of this year's workshop</p>
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Documents Card -->
+                <a href="document.html" class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-file-alt text-2xl text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Conference Documents</h3>
+                    <p class="text-gray-400 text-center">Download important materials</p>
+                </a>
+
+                <!-- Speakers Card -->
+                <a href="speakers.html" class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-users text-2xl text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Featured Speakers</h3>
+                    <p class="text-gray-400 text-center">Meet our experts</p>
+                </a>
+
+                <!-- Program Card -->
+                <a href="program.html" class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-calendar-alt text-2xl text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Conference Program</h3>
+                    <p class="text-gray-400 text-center">View full schedule</p>
+                </a>
+
+                <!-- Gallery Card -->
+                <a href="gallery.html" class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-images text-2xl text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-center">Event Gallery</h3>
+                    <p class="text-gray-400 text-center">View past events</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+<!-- Conference Highlights Section -->
+<section id="highlights" class="py-20 bg-gradient-to-b from-gray-900 to-gray-900/50">
+    <div class="container mx-auto px-4 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Conference Highlights</h2>
+            <p class="text-gray-400 max-w-xl mx-auto">Core features of this year's workshop</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1: Scalable Methods -->
+            <div class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
+                <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-expand-arrows-alt text-2xl text-cyan-400"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Scalable Characterization</h3>
+                <p class="text-gray-400">
+                    Cutting-edge protocols for large-scale quantum system verification
+                </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
-                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-microscope text-2xl text-cyan-400"></i>
+            <!-- Card 2: Theoretical Advances -->
+            <div class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
+                <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-brain text-2xl text-cyan-400"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Theoretical Innovations</h3>
+                <p class="text-gray-400">
+                    Latest developments in efficient validation theories
+                </p>
+            </div>
+
+            <!-- Card 3: Experimental Validation -->
+            <div class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
+                <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6">
+                    <i class="fas fa-microscope text-2xl text-cyan-400"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-4">Experimental Verification</h3>
+                <p class="text-gray-400">
+                    Hands-on sessions with state-of-the-art equipment
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Brief Introduction Section -->
+    <section class="py-20 border-t border-gray-800">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">About the Workshop</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Background -->
+                    <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700/50">
+                        <div class="w-10 h-10 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-flask text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Background</h3>
+                        <p class="text-gray-400 text-sm">Quantum technologies are revolutionizing secure communication, computation, and simulation. Effective characterization and verification are crucial as systems scale.</p>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Cutting-edge Research</h3>
-                    <p class="text-gray-400">Presentations from 50+ leading researchers in quantum measurement and state reconstruction.</p>
+
+                    <!-- Objectives -->
+                    <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700/50">
+                        <div class="w-10 h-10 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-bullseye text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Objectives</h3>
+                        <p class="text-gray-400 text-sm">Bring together experts to address scalability challenges and develop efficient QCVV methods for large quantum systems.</p>
+                    </div>
+
+                    <!-- Format -->
+                    <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-700/50">
+                        <div class="w-10 h-10 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-network-wired text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">Hybrid Format</h3>
+                        <p class="text-gray-400 text-sm">Combining physical sessions in Shanghai with virtual participation options, featuring interactive workshops and live-streamed talks.</p>
+                    </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
-                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-users-gear text-2xl text-cyan-400"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Hands-on Workshops</h3>
-                    <p class="text-gray-400">Practical sessions with state-of-the-art quantum tomography equipment and software.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="group bg-gray-800/50 p-8 rounded-2xl border border-gray-700/50 hover:border-cyan-500/30 transition-all">
-                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-network-wired text-2xl text-cyan-400"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-4">Networking Opportunities</h3>
-                    <p class="text-gray-400">Connect with academia and industry leaders during dedicated networking sessions.</p>
+                <!-- Full Description -->
+                <div class="mt-12 bg-gray-800/50 p-8 rounded-xl border border-gray-700/50">
+                    <p class="text-gray-400 leading-relaxed">
+                        The rapid advancement of quantum technologies brings both opportunities and challenges in system characterization. Traditional tomographic methods become impractical as quantum systems scale, creating an urgent need for innovative QCVV approaches. This workshop will:
+                    </p>
+                    <ul class="mt-4 space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-cyan-400 mt-1 mr-2 text-sm"></i>
+                            Showcase latest developments in efficient characterization protocols
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-cyan-400 mt-1 mr-2 text-sm"></i>
+                            Explore hybrid verification methods combining physical and theoretical approaches
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-cyan-400 mt-1 mr-2 text-sm"></i>
+                            Facilitate collaboration between academia and industry
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -137,11 +298,9 @@
                     <p class="text-gray-400">Advancing quantum measurement techniques through international collaboration.</p>
                 </div>
                 <div>
-                    <h4 class="text-gray-300 font-semibold mb-4">Quick Links</h4>
+                    <h4 class="text-gray-300 font-semibold mb-4">Previous Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-cyan-400">Code of Conduct</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-cyan-400">Travel Information</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-cyan-400">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400">2023</a></li>
                     </ul>
                 </div>
                 <div>
