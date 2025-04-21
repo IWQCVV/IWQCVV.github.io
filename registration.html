@@ -21,13 +21,6 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
         }
 
-        /* 响应式高度控制 */
-        @media (min-width: 768px) {
-            .form-container .aspect-[4/3] {
-                aspect-ratio: unset;
-                height: auto;
-            }
-        }
 
         /* 隐藏内嵌滚动条 */
         iframe {
@@ -213,4 +206,13 @@
         </div>
     </footer>
 </body>
+<script>
+    // 自动调整iframe高度
+    window.addEventListener('message', function(e) {
+        const iframe = document.querySelector('iframe');
+        if (e.data && typeof e.data.height === 'string') {
+            iframe.style.height = e.data.height + 'px';
+        }
+    });
+    </script>
 </html>
