@@ -139,15 +139,33 @@
             <div class="bg-gray-800/50 p-8 rounded-xl border border-gray-700/50 mb-8">
                 <div class="text-center">
                     <i class="fas fa-info-circle text-cyan-400 text-2xl mb-4"></i>
-                    <p class="text-gray-400 text-white" >
+                    <p class="text-gray-300"> <!-- 提升可读性 -->
                         Please complete all required fields. Registration closes on July 15, 2025.<br>
-                        For group registrations, contact yanxinli@fudan.edu.cn.
-                    </p>
-                    <p class = text-cyan-400> 
-                        If the form does not load, please use <b>proxy</b> or <b>VPN</b> to access this page.
+                        If any questions, contact 
+                        <a href="mailto:yanxinli@fudan.edu.cn" class="text-cyan-300 hover:underline">
+                            yanxinli@fudan.edu.cn
+                        </a>
                     </p>
                 </div>
             </div>
+            
+            <div class="bg-gray-800/50 p-8 rounded-xl border-2 border-cyan-500/60 mb-8 animate-pulse hover:animate-none">
+                <div class="text-center space-y-4">
+                    <div class="inline-flex items-center justify-center bg-cyan-500/20 rounded-full px-4 py-2 
+                                sm:min-w-[200px] truncate">
+                        <i class="fas fa-exclamation-triangle text-cyan-400 mr-2"></i>
+                        <span class="font-semibold text-cyan-300">Access Notice</span> <!-- 提升对比度 -->
+                    </div>
+                    <div class="mt-4 p-4 bg-gray-900/30 rounded-lg">
+                        <p class="text-cyan-300 text-sm leading-relaxed">
+                            If the form does not load, please use 
+                            <strong class="font-semibold">proxy</strong> or 
+                            <strong class="font-semibold">VPN</strong> to access.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
 
             <!-- Replace with your Microsoft Form embed code -->
             <div class="form-container">
@@ -221,5 +239,11 @@
             iframe.style.height = e.data.height + 'px';
         }
     });
+    setTimeout(() => {
+    const iframe = document.querySelector('iframe');
+    if (iframe && iframe.clientHeight < 100) {
+        document.querySelector('.access-notice').classList.add('ring-2', 'ring-cyan-500');
+    }
+}, 5000);
     </script>
 </html>
