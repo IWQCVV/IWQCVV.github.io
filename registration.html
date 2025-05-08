@@ -38,6 +38,14 @@
                 min-height: 100vh;
             }
         }
+        #back-to-top {
+        transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease;
+        }
+        
+        #back-to-top.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
         <script>
             // 移动菜单切换脚本
@@ -60,6 +68,13 @@
             });
         </script>
 </head>
+<button 
+    id="back-to-top"
+    class="fixed bottom-8 right-8 p-3 bg-cyan-500/90 hover:bg-cyan-600 rounded-full shadow-lg backdrop-blur-sm transition-all opacity-0 transform translate-y-4"
+    aria-label="Back to top"
+>
+    <i class="fas fa-arrow-up text-white text-xl"></i>
+</button>
 <body class="bg-gray-900 text-gray-100">
     <!-- Navigation -->
     <nav class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 border-b border-cyan-500/20">
@@ -253,5 +268,33 @@
         document.querySelector('.access-notice').classList.add('ring-2', 'ring-cyan-500');
     }
 }, 5000);
+    </script>
+    <script>
+        // 返回顶部按钮逻辑
+        const backToTop = document.getElementById('back-to-top');
+        
+        // 滚动显示/隐藏按钮
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+    
+        // 平滑滚动到顶部
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    
+        // 移动端适配（减小按钮尺寸）
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            backToTop.classList.add('bottom-4', 'right-4', 'p-2');
+            backToTop.querySelector('i').classList.add('text-lg');
+        }
     </script>
 </html>
