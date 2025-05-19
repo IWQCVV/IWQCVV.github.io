@@ -1,0 +1,433 @@
+
+            <a href="renamed_photos/001.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/001.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/002.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/002.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/003.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/003.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/004.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/004.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/005.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/005.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/006.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/006.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/007.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/007.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/008.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/008.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/009.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/009.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/010.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/010.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/011.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/011.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/012.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/012.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/013.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/013.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/014.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/014.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/015.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/015.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/016.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/016.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/017.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/017.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/018.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/018.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/019.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/019.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/020.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/020.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/021.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/021.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/022.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/022.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/023.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/023.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/024.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/024.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/025.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/025.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/026.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/026.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/027.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/027.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/028.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/028.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/029.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/029.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/030.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/030.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/031.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/031.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/032.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/032.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/033.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/033.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/034.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/034.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/035.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/035.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="renamed_photos/036.webp" class="gallery-item">
+                <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                    <img src="thumbs/036.webp" 
+                         class="w-full h-64 object-cover"
+                         alt="Workshop session"
+                         loading="lazy">
+                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i class="fas fa-expand text-3xl text-white"></i>
+                    </div>
+                </div>
+            </a>
+            
