@@ -20,10 +20,10 @@ def rename_photos(input_dir, output_dir):
 
     # Rename and copy the images to the output directory
     for i, filename in enumerate(image_files, start=1):
-        new_name = f"{str(i+4).zfill(3)}.webp"
+        new_name = f"{str(i-1).zfill(3)}.webp"
         shutil.copy(os.path.join(input_dir, filename), os.path.join(output_dir, new_name))
 
 if __name__ == "__main__":
-    input_dir = "photos/Meeting_photos"
+    input_dir = "building"
     output_dir = "renamed_photos"
     rename_photos(input_dir, output_dir)

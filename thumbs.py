@@ -2,9 +2,9 @@ import os
 
 from PIL import Image
 
-input_dir = "photos/Meeting_photos"
+input_dir = "building"
 output_dir = "thumbs"
-i = 4
+i = -1
 for filename in os.listdir(input_dir):
     if filename.endswith(('.jpg', '.png')):
         img = Image.open(f"{input_dir}/{filename}")
