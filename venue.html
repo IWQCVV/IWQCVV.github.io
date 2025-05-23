@@ -6,6 +6,7 @@
     <title>IWQCVV 2025</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
     <style>
         @keyframes gradientBG {
             0% {background-position: 0% 50%;}
@@ -170,15 +171,21 @@
                 </div>
             </div>
     
-            <div class="rounded-xl overflow-hidden border border-gray-700/50 h-[710px] lg:h-[610px]">
-                <iframe 
-                    src="https://www.bing.com/maps/embed?cp=31.339024~121.506223&lvl=16&style=r&typ=d&pi=0&w=710&h=600&setLang=en"
-                    class="w-full h-full"  
-                    style="border:0;"
-                    allowfullscreen
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="rounded-xl overflow-hidden border border-gray-700/50 ">
+                <div class="grid " id="gallery">
+
+                    <a href="renamed_photos/000.webp" class="gallery-item">
+                        <div class="group relative rounded-xl overflow-hidden transform transition hover:scale-105">
+                            <img src="thumbs/000.webp" 
+                                 class=" object-cover"
+                                 alt="Workshop session"
+                                 loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fas fa-expand text-3xl text-white"></i>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
             </div>
         </div>
     </main>
@@ -223,9 +230,21 @@
                 </div>
             </div> -->
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
-                <p>© 4th International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025). All rights reserved.| Map data © <a href="https://www.microsoft.com/maps/product/terms.html" class="text-cyan-400 hover:text-cyan-300">Microsoft</a></p>
+                <p>© 4th International Workshop on Quantum Characterization, Verification, and Validation (IWQCVV 2025). All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+<script>
+    lightGallery(document.getElementById('gallery'), {
+        selector: '.gallery-item',
+        download: false,
+        zoom: true,
+        // 新增配置确保正确显示弹窗
+        mode: 'lg-fade',
+        cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+        backdropDuration: 150
+    });
+</script>
 </html>
